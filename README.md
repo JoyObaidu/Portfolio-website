@@ -41,15 +41,3 @@ Modify style.css to adjust styles and color themes.
 
 Edit script.js to tweak animations or form validation rules.
 
-Usage
-
-Simply open index.html in any modern browser to view and interact with the portfolio.
-
-Contributing
-
-Feel free to fork the repository and submit pull requests for improvements.
-
-License
-
-This project is open-source and available under the MIT License.
-
