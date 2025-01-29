@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* .roboto-<uniquifier> {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    padding: 0;
+    margin: 0;  
+    overflow-x: hidden;
+    font-family: "Roboto", serif;
+    background-color: hsl(0, 0%, 100%);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0 80px;
+}
+header{
+    padding: 20px 30px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    gap: 60%;
+}
+nav{
+    display: none;
+}
+button{
+    background: none;
+    border: none;
+    color: hsl(33, 96%, 57%);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1.2rem;
+    width: 20%;
+}
+.hero{
+    background-color: hsl(210, 85%, 95%);
+    padding: 40px 100px;
+    letter-spacing: 2px;
+}
+.hero span{
+     color: #31049a;
+     font-size: 3.6rem;
+     font-weight: 800;
+}
+.hero p{
+    margin: 20px 0;
+    line-height: 30px;
+}
+p{
+    color: hsla(0, 0%, 0%, 0.507);
+}
+h1{
+    color: hsl(240, 85%, 3%);
+    font-weight: 600;
+    font-size:xx-large;
+}
+.hero h2{
+    color: #3f396d;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.skills{
+    padding-top: 30px;
+    background-color: hsl(210, 85%, 95%);
+    letter-spacing: 1.5px;
+}
+.skills .progress div{
+background-color: #fff;
+padding: 50px;
+border-radius: 40px;
+margin-bottom: 20px;
+}
+.skills .progress div *{
+    margin: 20px 0;
+}
+
+.skills .skills-text{
+    text-align: left;
+    background: none;
+    margin: 40px 0;
+}
+.skills .skills-text span{
+    color: #31049a;
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+h3{
+    color: #8c5df9; 
+    font-weight: 500;
+    font-size: x-large;
+    margin-bottom: 40px;
+}
+.expertise{
+    padding: 40px 0 ;
+}
+.expertise .service *{
+    margin-bottom: 15px;
+}
+.expertise span, .portfolio span{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #06023a;
+    letter-spacing: 2px;
+}
+.expertise .service{
+    margin: 30px 0;
+}
+
+.expertise .service img{
+    width: 106px;
+    height: 108px;
+}
+
+h4{
+    color: #06023a;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+a{
+    color: hsl(33, 96%, 57%);
+    text-decoration: none;  
+    outline: none;
+}
+a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: hsl(33, 96%, 57%);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease-in-out;
+    transform-origin: right;
+}
+
+a:hover::after {
+    transform: scaleX(1); /* Expands on hover */
+    transform-origin: left;
+}
+
+.skills div .circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills .html .circle{
+border: 3px solid hsl(33, 96%, 57%);
+}
+
+.skills .javascript .circle{
+    border: 3px solid #31049a;
+    }
+
+    .skills .php .circle{
+        border: 3px solid rgb(31, 125, 31);
+        }
+
+        .skills .react .circle{
+            border: 3px solid hsl(240, 85%, 3%);
+            }
+.circle::after{
+    content: "";
+            border-radius: 50%;
+            position: absolute;
+}
+.skills button {
+    border-radius: 30px;
+    padding: 20px 40px;
+    background-color: hsl(33, 96%, 57%);
+    color: #fff;
+    width: 200px;
+}
+
+.portfolio div{
+    margin-bottom: 20px;
+}
+
+.portfolio div a{
+color: hsl(240, 85%, 3%);
+margin: 0 20px;
+}
+.portfolio-works *{
+margin: 10px 0;
+}
+.portfolio-works span{
+    background-color: #3f396d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: small;
+}
